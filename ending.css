@@ -1,0 +1,69 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Quicksand', sans-serif; 
+  overflow: hidden; 
+}
+
+.background {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('uchicago.jpg') center/cover no-repeat;
+  height: 100vh;
+  filter: blur(2px); 
+  backdrop-filter: blur(2px); 
+  transition: background 0.5s ease-in-out; 
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  opacity: 1; 
+  transition: transform 0.5s ease-in-out; 
+}
+
+.text {
+  font-size: 25px; 
+  line-height: 1.5;
+  opacity: 0; 
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
+}
+
+#loveForUChicago,
+#invitationText,
+#uchicagoText,
+#codedBy {
+  opacity: 0; 
+  font-size: 28px; 
+}
+
+#loveForUChicago {
+  font-size: 24px; 
+  color: #ffffff; 
+}
+
+#codedBy {
+  display: none;
+}
+
+#loveForUChicago,
+#invitationText,
+#uchicagoText,
+#codedBy {
+  margin-top: 30px; 
+}
+
+#invitationText,
+#uchicagoText,
+#codedBy {
+  display: none; 
+}
+
+/* Animation effect */
+.text:hover {
+  transform: scale(1.05); 
+}

@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a;
+  color: #fff;
+  font-family: 'Papyrus', cursive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden; 
+}
+
+#story-container {
+  max-width: 800px;
+  text-align: center;
+  background-color: rgba(60, 48, 38, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  animation: fadeInAndZoom 3s ease-in-out; 
+}
+
+.story-part {
+  display: none;
+  font-size: 24px;
+  margin-bottom: 20px;
+  animation: slowZoomIn 4s ease-in-out;
+}
+
+@keyframes fadeInAndZoom {
+  from {
+      opacity: 0;
+      transform: scale(0.8); 
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+@keyframes slowZoomIn {
+  from {
+      opacity: 0;
+      transform: scale(0.8); 
+  }
+  to {
+      opacity: 1;
+      transform: scale(1); 
+  }
+}
+
+
+.audio-container {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.audio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background: transparent;
+}
+
+
+button {
+  background-color: #3d5a80; 
+  border: 2px solid #ececec; 
+  color: #f4d35e;
+  padding: 15px 32px; 
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px; 
+  margin: 10px 5px; 
+  cursor: pointer;
+  border-radius: 8px; 
+  font-family: 'HarryPotter', sans-serif; 
+}
+
+
+button:hover {
+  background-color: #1d3557; 
+  color: #ffba08; 
+}
+

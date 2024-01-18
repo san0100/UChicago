@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Secret Messenger</title>
+</head>
+
+<body>
+    <div class="messenger">
+        <div class="conversation-box">
+            <div class="title-bar">
+                <img src="University-of-Chicago-Logo.png" alt="Secret Messenger Logo" class="logo">
+                <span class="audio-icon">📞</span>
+                Secret Messenger 
+            </div>
+            <div class="conversation" id="conversation"></div>
+            <div class="message-input">
+                <input type="text" placeholder="Type a message...">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="sidebar-options">
+                <div class="sidebar-option">
+                    <div class="sidebar-icon phone-icon"></div>
+                    <div class="sidebar-label">Phone</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
