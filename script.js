@@ -43,7 +43,7 @@ const messages = [
 ];
 
 const htmlLinkMessage = {
-    text: 'Hey there! Before you disappear into the mundane, check out this short clip of magic <a href="ending.html" id="ending.html">here</a>. Only takes a moment!',
+    text: 'Also, Before you disappear into the mundane, check out this short clip of magic <a href="ending.html" id="ending.html">here</a>. Only takes a moment!',
     speaker: 'magic'
 };
 
